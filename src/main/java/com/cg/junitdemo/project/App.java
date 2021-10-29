@@ -7,10 +7,11 @@ public class App {
 		System.out.println("Start");
 
 		MyCalc myCalc = new MyCalc();
+
 		System.out.println(myCalc.getPi());
 		System.out.println(myCalc.addNums(10, 20));
 
-		System.out.println("Start");
+		System.out.println("End");
 	}
 
 }
