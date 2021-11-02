@@ -25,7 +25,7 @@ public class JdbcDemo {
 			rs = st.executeQuery(sql);
 			while (rs.next()) {
 				int columnIndex = 1;
-				for (int i = 1; i <= rs.getFetchSize(); i++) {
+				for (int i = 1; i <= 3; i++) {
 					System.out.print(rs.getString(columnIndex) + "\t");
 					columnIndex++;
 				}
