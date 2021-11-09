@@ -2,8 +2,10 @@ package com.cg.jpademo;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+//@Table(name = "emp99")
 public class Employee {
 
 	@Id
