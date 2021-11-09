@@ -1,4 +1,7 @@
-package com.cg.jpademo;
+package com.cg.jpademo.model;
+//package com.cg.jpademo.entities;
+
+import java.io.Serializable;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -6,7 +9,13 @@ import javax.persistence.Table;
 
 @Entity
 //@Table(name = "emp99")
-public class Employee {
+
+public class Employee implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@Id
 	private int eid;

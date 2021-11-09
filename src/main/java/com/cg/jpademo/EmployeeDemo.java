@@ -5,6 +5,8 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
+import com.cg.jpademo.model.Employee;
+
 public class EmployeeDemo {
 
 	public static void main(String[] args) {
@@ -24,9 +26,10 @@ public class EmployeeDemo {
 //		em.persist(emp3);
 //		em.detach(emp2);
 
-		emp2.setFirstName("Aaa");
-		em.merge(emp2); // update
-		System.out.println(emp2.toString());
+//		emp2.setFirstName("Aaa");
+//		em.merge(emp2); // update
+//		System.out.println(emp2.toString());
+//		Employee emp5 = em.find(Employee.class, emp2);
 
 		em.remove(emp2); // delete
 
