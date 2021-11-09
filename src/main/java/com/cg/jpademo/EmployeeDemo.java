@@ -17,12 +17,12 @@ public class EmployeeDemo {
 		tr.begin();
 
 		Employee emp1 = new Employee(101, "Sonu", 10.6);
-
 		em.persist(emp1); // insert
 
-//		em.remove(emp1); // delete
+// 		em.remove(emp1); // delete
 //		em.merge(emp1); // update
-//		em.find(Employee.class, 101); // select
+		Employee emp2 = em.find(Employee.class, 505); // select
+		System.out.println(emp2.toString());
 		tr.commit();
 
 		System.out.println("End");
